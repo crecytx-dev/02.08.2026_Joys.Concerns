@@ -9,7 +9,7 @@
   body {
     font-family: Georgia, serif;
     max-width: 700px;
-    margin: 10px auto;   /* Changed from 40px to 10px */
+    margin: 10px auto;
     padding: 0 20px 20px 20px;
     line-height: 1.1;
     background: #ffffff;
@@ -21,29 +21,31 @@
     margin-bottom: 2px;
   }
 
+  /* Enlarged for screen */
   h1 {
-    font-size: 26px;
+    font-size: 29px;
     font-weight: bold;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 23px;
     font-weight: normal;
   }
 
+  /* Enlarged for screen */
   p {
     margin: 6px 0;
-    font-size: 15px;
+    font-size: 21px;
   }
 
   .section-title {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 21px; /* enlarged from 18px */
     margin-top: 6px;
   }
 
   .print-btn {
-    font-size: 13px;
+    font-size: 11px;
     padding: 2px 8px;
     border: 1px solid #444;
     background: #fff;
@@ -54,27 +56,30 @@
   img {
     max-width: 100%;
     height: auto;
-    margin: 4px 0;
+    margin: 0 0;
   }
 
   .footer {
-    font-size: 11px;
+    font-size: 13px;
     text-align: left;
-    margin-top: 8px;
+    margin-top: 0;
+    color: #555;
   }
 
   .footer p {
     margin: 2px 0;
-    line-height: 1.1;
+    line-height: 1.0;
+    font-size: 13px;
   }
 
+  /* PRINT — keep original sizes */
   @media print {
-    .print-btn {
-      display: none;
-    }
-    .footer a {
-      display: none;
-    }
+    h1 { font-size: 26px; }
+    h2 { font-size: 20px; }
+    p { font-size: 18px; }
+    .section-title { font-size: 18px; }
+    .print-btn { display: none; }
+    .footer a { display: none; }
   }
 </style>
 </head>
@@ -119,6 +124,3 @@
 
 </body>
 </html>
-
-
-
